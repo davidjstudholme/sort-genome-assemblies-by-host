@@ -44,6 +44,6 @@ Cat                             Homo sapiens newborn        parse_biosample_txt.
 cattle                          horse                       parse_biosample_txt.py~
 Cervus elaphus                  Human (Infant)              partridge```
 
-
+It is necessary to gunzip the downloaded files, which are downloaded as .fna.gz and .gbff.gz files.
 
 

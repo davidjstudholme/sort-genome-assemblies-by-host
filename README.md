@@ -18,3 +18,32 @@ So, the stepts that this script performs are:
 ```python ./parse_biosample_txt.py > assemblies-and-bioprojects.csv```
 
 The script expects to find two input files in the working directory: ```biosample_result.txt``` and ```assembly_summary.txt```.
+The first of these can be generated using the "Send to file" function on the NCBI's BioProject we page. For example: at https://www.ncbi.nlm.nih.gov/biosample/?term=Staphylococcus+aureus, click on "Send to file" and select "Text (full)" as the Format.  
+The latter can be downloaded from the NCBI's FTP site, e.g. https://ftp.ncbi.nih.gov/genomes/genbank/bacteria/Staphylococcus_aureus/assembly_summary.txt
+
+As well as generating a tab-delimited table listing assemblies and some of their associated BioSample metadata, the script also uses wget to download the assembly data from NCBI:
+
+```$ ls
+Animal                          Chicken (Hen)               Human (neonate)               pheasant
+assemblies-and-bioprojects.csv  cow                         kangaroo                      pig
+assembly_summary.txt            Cow                         laboratory mouse              Pig
+Avian (bird)                    cow with bovine mastitis    Lamb                          pigs
+biosample_result.txt            dog                         macaque                       Rabbit
+biosample_result.txt~           environmental               Meleagris gallopavo           Rattus
+blank vole                      Equus caballus              missing                       ribbon fish
+Bos taurus                      Equus ferus caballus        Mus musculus C3H              Rodentia
+Bos taurus (cow)                feline                      NA                            sheep
+bovine                          Felis catus                 not applicable                Sheep
+Bovine                          field vole                  Not applicable                Sheep (Ewe)
+canine                          Gallus gallus               not available                 Sus scrofa
+Canis lupus familiaris          Globicephala macrorhynchus  not available: not collected  Sus scrofa domesticus
+Capra pyrenaica                 Gyps fulvus                 Oryctolagus cuniculus         swine
+Caprine                         Hen                         Ovine                         Swine
+cat                             Homo sapiens                Ovis aries                    unknown
+Cat                             Homo sapiens newborn        parse_biosample_txt.py
+cattle                          horse                       parse_biosample_txt.py~
+Cervus elaphus                  Human (Infant)              partridge```
+
+
+
+

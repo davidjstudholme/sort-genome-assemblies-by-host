@@ -17,4 +17,4 @@ So, the stepts that this script performs are:
 
 ```python ./parse_biosample_txt.py > assemblies-and-bioprojects.csv```
 
-
+The script expects to find two input files in the working directory: ```biosample_result.txt``` and ```assembly_summary.txt```.

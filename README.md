@@ -23,7 +23,9 @@ The latter can be downloaded from the NCBI's FTP site, e.g. https://ftp.ncbi.nih
 
 As well as generating a tab-delimited table listing assemblies and some of their associated BioSample metadata, the script also uses wget to download the assembly data from NCBI:
 
-```$ ls
+```
+$ ls
+
 Animal                          Chicken (Hen)               Human (neonate)               pheasant
 assemblies-and-bioprojects.csv  cow                         kangaroo                      pig
 assembly_summary.txt            Cow                         laboratory mouse              Pig
@@ -42,7 +44,8 @@ Caprine                         Hen                         Ovine               
 cat                             Homo sapiens                Ovis aries                    unknown
 Cat                             Homo sapiens newborn        parse_biosample_txt.py
 cattle                          horse                       parse_biosample_txt.py~
-Cervus elaphus                  Human (Infant)              partridge```
+Cervus elaphus                  Human (Infant)              partridge
+```
 
 It is necessary to gunzip the downloaded files, which are downloaded as .fna.gz and .gbff.gz files.
 

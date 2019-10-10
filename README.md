@@ -13,5 +13,8 @@ So, the stepts that this script performs are:
 * Infer host for each assembly
 * Download each assembly into a directory whose name indicates the host
 
+## Usage
+
+```python ./parse_biosample_txt.py > assemblies-and-bioprojects.csv```
 
 

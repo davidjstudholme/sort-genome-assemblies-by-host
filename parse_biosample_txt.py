@@ -100,8 +100,8 @@ print( 'biosample' + "\t" +
        'host' + "\t" +
        'bioproject' + "\t" +
        'infraspecific_name' + "\t" +
+       'assembly_level' + "\t" +
        'version_status' + "\t" +
-       'genome_rep' + "\t" +
        'ftp_path'
 )
 
@@ -122,7 +122,9 @@ for bs in biosamples:
             )
 
             if ass.version_status == 'latest':
-                print subprocess.call(["wget", "--no-clobber", '-P' + bs.host, ass.ftp_path + '/*genomic.fna.gz'])
-                print subprocess.call(["wget", "--no-clobber", '-P' + bs.host, ass.ftp_path + '/*genomic.gbff.gz'])
+                if ass.assembly_level == 'Complete Genome' or ass.assembly_level == 'Chromosome':
+                    print subprocess.call(["wget", "--no-clobber", '-P' + bs.host, ass.ftp_path + '/*genomic.fna.gz'])
+                    print subprocess.call(["wget", "--no-clobber", '-P' + bs.host, ass.ftp_path + '/*genomic.gbff.gz'])
+                    print subprocess.call(["wget", "--no-clobber", '-P' + bs.host, ass.ftp_path + '/*genomic.gff.gz'])
             
     

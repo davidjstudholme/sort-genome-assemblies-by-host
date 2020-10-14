@@ -15,8 +15,7 @@ So, the steps that this script performs are:
 
 ## Usage
 
-```
-git clone https://github.com/davidjstudholme/SortGenomeAssembliesByHost.git
+```git clone https://github.com/davidjstudholme/SortGenomeAssembliesByHost.git
 python2 SortGenomeAssembliesByHost/parse_biosample_txt.py > assemblies-and-bioprojects.csv```
 
 The script expects to find two input files in the working directory: ```biosample_result.txt``` and ```assembly_summary.txt```.

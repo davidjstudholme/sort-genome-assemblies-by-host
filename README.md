@@ -15,7 +15,9 @@ So, the steps that this script performs are:
 
 ## Usage
 
-```python ./parse_biosample_txt.py > assemblies-and-bioprojects.csv```
+```
+git clone https://github.com/davidjstudholme/SortGenomeAssembliesByHost.git
+python2 SortGenomeAssembliesByHost/parse_biosample_txt.py > assemblies-and-bioprojects.csv```
 
 The script expects to find two input files in the working directory: ```biosample_result.txt``` and ```assembly_summary.txt```.
 The first of these can be generated using the "Send to file" function on the NCBI's BioProject we page. For example: at https://www.ncbi.nlm.nih.gov/biosample/?term=Staphylococcus+aureus, click on "Send to file" and select "Text (full)" as the Format.  

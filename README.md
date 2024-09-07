@@ -1,4 +1,3 @@
-# SortGenomeAssembliesByHost
 Download bacterial genome assemblies and sort into folders according to BioProject 'host' field
 
 ## The problem I want to solve:
